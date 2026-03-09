@@ -27,7 +27,7 @@ header{
 }
 
 header > h1{
-   font-size: 4em;
+   font-size: 10vh;
    font-variant: small-caps;
    font-family: var(--fonte2)
 }
@@ -48,11 +48,13 @@ a:hover{
 .imagem{
     background-color: rgb(23, 23, 23);
     color: white;
+    box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.751);
 }
 
 .imagem > p{
     background-color: rgba(0, 0, 0, 0.477);
-    width: 500px;
+    display: inline-block;
+    padding: 5px;
 }
 
 section{
@@ -61,6 +63,21 @@ section{
     padding-left: 30px;
     line-height: 2em;
     font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+.imagem#img01{
+    background: url('imagens/background001.jpg');
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+.imagem#img02{
+    background: url('imagens/background002.jpg');
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
 }
 
 footer{
