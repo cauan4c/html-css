@@ -17,6 +17,7 @@
 
         table{
             width:400px;
+            height: 400px;
             border-collapse: collapse;
             margin: auto;
         }
@@ -24,11 +25,23 @@
         td{
             border: 1px solid black;
             text-align: center;
+            padding: 10px;
         }
 
         .linha{
             background-color: rgb(255, 241, 219);
             color: black;
+        }
+
+        .superior{
+            vertical-align: top;
+        }
+        .inferior{
+            vertical-align: bottom;
+        }
+
+        .numero{
+            text-align: right;
         }
 
         h1{
@@ -41,19 +54,19 @@
     <h1>Minha primeira tabela</h1>
     <table>
         <tr class= "linha">
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
+            <td class="superior">A1</td>
+            <td class="superior">B1</td>
+            <td class="superior">C1</td>
         </tr>
         <tr>
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
+            <td class="numero">A2</td>
+            <td class="numero">B2</td>
+            <td class="numero">C2</td>
         </tr>
         <tr class= "linha">
-            <td>A3</td>
-            <td>B3</td>
-            <td>C3</td>
+            <td class="inferior">A3</td>
+            <td class="inferior">B3</td>
+            <td class="inferior">C3</td>
         </tr>
     </table>
 </body>
