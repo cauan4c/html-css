@@ -12,6 +12,8 @@
 
         h1{
             text-align: center;
+            margin: 0px;
+            padding-bottom: 5px;
         }
 
         table{
@@ -20,10 +22,12 @@
             height: 400px;
             padding: 10px;
             margin: auto;
+            position: relative;
         }
 
-        td{
+        td, th{
             border: black solid 2px;
+            padding: 5px;
 
         }
 
@@ -34,19 +38,40 @@
             font-weight: bold;
         }
 
+        thead > tr > th{
+            position: sticky;
+            top: 0px;
+            background-color: gray;
+            }
+            
         .num{
             text-align: right;
+        }
+        caption{
+            font-weight: bold;
+            padding-bottom:10px;
+            margin:0px;
+            font-size: 30px;
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgrey;
+        }
+
+        p{
+            padding:10px;
         }
     </style>
 </head>
 <body>
     <h1>Uso de Tabelas Grandes</h1>
     <table>
-
+        <caption>População das Unidades Federativas</caption>        
         <thead>
             <tr>
-                <td>Estado</td>
-                <td>População</td>
+                <th scope="col" style="width: 500px;">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
 
@@ -70,9 +95,10 @@
                 <td>Bahia</td>
                 <td class="num">14 870 907</td>
             </tr>
+
             <tr>
                 <td>Paraná</td>
-                <td class="num">11 890 517	</td>
+                <td class="num">11 890 517</td>
             </tr>
 
             <tr>
@@ -89,7 +115,7 @@
                 <td>Ceará</td>
                 <td class="num">9 268 836</td>
             </tr>
-            
+
             <tr>
                 <td>Pará</td>
                 <td class="num">8 711 196</td>
@@ -109,14 +135,139 @@
                 <td>Maranhão</td>
                 <td class="num">7 018 211</td>
             </tr>
+
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 281 209</td>
+            </tr>
+
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4 102 129</td>
+            </tr>
+
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4 059 905</td>
+            </tr>
+
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 836 399</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 446 071</td>
+            </tr>
+
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3 375 646</td>
+            </tr>
+
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3 365 351</td>
+            </tr>
+
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3 094 325</td>
+            </tr>
+
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 901 895</td>
+            </tr>
+
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2 291 077</td>
+            </tr>
+
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1 746 227</td>
+            </tr>
+
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1 577 342</td>
+            </tr>
+
+            <tr>
+                <td>Acre</td>
+                <td class="num">880 631</td>
+            </tr>
+
+            <tr>
+                <td>Amapá</td>
+                <td class="num">802 837</td>
+            </tr>
+
+            <tr>
+                <td>Roraima</td>
+                <td class="num">716 793</td>
+            </tr>
         </tbody>
 
         <tfoot>
             <tr>
-                <td>Total de habitantes:</td>
-                <td class="num">172.864.384</td>
+                <th scope="row">Total de habitantes:</th>
+                <th class="num" scope="row">172.864.384</th>
             </tr>
         </tfoot>
     </table>
+</body>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, repudiandae. In neque veritatis harum laboriosam minima quod optio placeat non reprehenderit tenetur! Nemo, quae libero odit suscipit provident molestias. Illo?</p>
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni enim qui, quaerat eos accusamus, ipsa cumque fugiat nesciunt molestiae animi sapiente! Architecto eius earum vero fuga quia voluptate aliquid repellat.</p>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem amet sequi deserunt magni officia aliquam, qui ad, laboriosam sapiente accusantium quas, quod dolore repellendus et facere? Est tempora saepe magni.</p>
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In ab vel quia ipsam eos, dolor incidunt labore impedit sapiente, facilis voluptatem praesentium fugiat eaque, nemo dignissimos ipsa culpa quasi quas!</p>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam harum qui non itaque similique ad magni praesentium nihil ipsum, tempore amet. Iure ducimus sint ullam illum eos fugit nesciunt vitae.</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, repudiandae. In neque veritatis harum laboriosam minima quod optio placeat non reprehenderit tenetur! Nemo, quae libero odit suscipit provident molestias. Illo?</p>
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni enim qui, quaerat eos accusamus, ipsa cumque fugiat nesciunt molestiae animi sapiente! Architecto eius earum vero fuga quia voluptate aliquid repellat.</p>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem amet sequi deserunt magni officia aliquam, qui ad, laboriosam sapiente accusantium quas, quod dolore repellendus et facere? Est tempora saepe magni.</p>
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In ab vel quia ipsam eos, dolor incidunt labore impedit sapiente, facilis voluptatem praesentium fugiat eaque, nemo dignissimos ipsa culpa quasi quas!</p>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam harum qui non itaque similique ad magni praesentium nihil ipsum, tempore amet. Iure ducimus sint ullam illum eos fugit nesciunt vitae.</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, repudiandae. In neque veritatis harum laboriosam minima quod optio placeat non reprehenderit tenetur! Nemo, quae libero odit suscipit provident molestias. Illo?</p>
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni enim qui, quaerat eos accusamus, ipsa cumque fugiat nesciunt molestiae animi sapiente! Architecto eius earum vero fuga quia voluptate aliquid repellat.</p>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem amet sequi deserunt magni officia aliquam, qui ad, laboriosam sapiente accusantium quas, quod dolore repellendus et facere? Est tempora saepe magni.</p>
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In ab vel quia ipsam eos, dolor incidunt labore impedit sapiente, facilis voluptatem praesentium fugiat eaque, nemo dignissimos ipsa culpa quasi quas!</p>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam harum qui non itaque similique ad magni praesentium nihil ipsum, tempore amet. Iure ducimus sint ullam illum eos fugit nesciunt vitae.</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, repudiandae. In neque veritatis harum laboriosam minima quod optio placeat non reprehenderit tenetur! Nemo, quae libero odit suscipit provident molestias. Illo?</p>
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni enim qui, quaerat eos accusamus, ipsa cumque fugiat nesciunt molestiae animi sapiente! Architecto eius earum vero fuga quia voluptate aliquid repellat.</p>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem amet sequi deserunt magni officia aliquam, qui ad, laboriosam sapiente accusantium quas, quod dolore repellendus et facere? Est tempora saepe magni.</p>
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In ab vel quia ipsam eos, dolor incidunt labore impedit sapiente, facilis voluptatem praesentium fugiat eaque, nemo dignissimos ipsa culpa quasi quas!</p>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam harum qui non itaque similique ad magni praesentium nihil ipsum, tempore amet. Iure ducimus sint ullam illum eos fugit nesciunt vitae.</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, repudiandae. In neque veritatis harum laboriosam minima quod optio placeat non reprehenderit tenetur! Nemo, quae libero odit suscipit provident molestias. Illo?</p>
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni enim qui, quaerat eos accusamus, ipsa cumque fugiat nesciunt molestiae animi sapiente! Architecto eius earum vero fuga quia voluptate aliquid repellat.</p>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem amet sequi deserunt magni officia aliquam, qui ad, laboriosam sapiente accusantium quas, quod dolore repellendus et facere? Est tempora saepe magni.</p>
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In ab vel quia ipsam eos, dolor incidunt labore impedit sapiente, facilis voluptatem praesentium fugiat eaque, nemo dignissimos ipsa culpa quasi quas!</p>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam harum qui non itaque similique ad magni praesentium nihil ipsum, tempore amet. Iure ducimus sint ullam illum eos fugit nesciunt vitae.</p>
 </body>
 </html>
